@@ -26,8 +26,8 @@ Pastikan Anda telah menginstal:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/sushi-restaurant.git
-cd sushi-restaurant
+git clone [https://github.com/username/sushi-restaurant.git](https://github.com/christinmanullang/restaurant-web.git)
+
 ```
 
 ### 2. Instalasi Backend (Express & MySQL)
@@ -35,7 +35,7 @@ cd sushi-restaurant
 - **Masuk ke direktori backend:**
 
 ```bash
-cd backend
+cd server
 ```
 
 - **Instal dependensi:**
@@ -52,13 +52,10 @@ npm install
   CREATE TABLE Menu (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    description TEXT,
-    price DECIMAL(10, 2),
+    price INT(11),
     image_url VARCHAR(255)
   );
   ```
-
-  - Edit konfigurasi koneksi di `backend/config/db.js` sesuai dengan kredensial database Anda.
 
 - **Jalankan server backend:**
 
@@ -73,7 +70,7 @@ Backend akan berjalan di `http://localhost:3000`.
 - **Masuk ke direktori frontend:**
 
 ```bash
-cd frontend
+cd client
 ```
 
 - **Instal dependensi:**
